@@ -1,0 +1,479 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+.BAKGROUND{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    z-index: 9999;
+}
+ .ANCOR{
+    color: #fff !important;    
+    font-size: 18px !important;
+    font-weight: 100 !important;
+    position: relative;   
+}
+.underLine{    
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: #fff;
+     opacity: 0;
+    transition:  all 1s; 
+}
+.ANCOR:hover .underLine{
+    opacity: 1;
+} 
+.underLine1{
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: #fff;
+}
+.ANCOR1{
+    color: #fff !important;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+}
+.btnNAV{
+    
+    background-color: white !important;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.home h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem !important;
+}
+.home h2{
+line-height: 1.5rem;
+}
+
+.home h2::after{
+    content: "";
+    animation: typing 3s infinite;
+}
+@keyframes typing {
+
+    0%{content: "|";}
+    4%{content: "e|";}
+    8%{content: "es|";}
+    12%{content: "esi|";}
+    16%{content: "esig|";}
+    20%{content: "esign|";}
+    24%{content: "esigne|";}
+    28%{content: "esigner|";}
+    32%{content: "esigne|";}
+    36%{content: "esign|";}
+    40%{content: "esig|";}
+    48%{content: "esi|";}
+    52%{content: "es |";}
+    56%{content: "e|";}
+    60%{content: "|";}
+
+}
+
+/*About*/
+.AboutMe{
+    padding-top: 4rem;  
+    background-color: #ccc;
+}
+.tittleAbout{  
+    margin-bottom: 2rem;
+    position: relative;
+}
+.Line1::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    bottom: -5px;
+   text-align: left;
+    background-color: #0078ff !important;
+}
+.AboutInformation{
+    padding: 2rem;
+}
+.AboutPragraf{
+    padding: 2rem;
+}
+.pargraf{
+    margin-bottom: 2rem;
+}
+.parg{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.content1{
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 1rem;
+}
+.precentage{
+    padding-top: 2.5rem;
+}
+.progr{
+    
+    margin-top: 1rem;
+}
+.progr P{
+    margin-bottom: 0%;
+    color: #4e4e4e;
+}
+
+/*SERVICES*/ 
+.services{
+    background-color:#ccc;
+    padding-top: 5rem!important;
+}
+.tittleCont{
+    margin-bottom: 4rem;
+    position: relative;
+}
+.line::before{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    text-align: center;
+    background-color: #0078ff;
+}
+.servCont i{
+    font-size: 300;
+}
+.servCont{
+
+    text-align: center;
+ padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+.servIcon{
+    margin-bottom: 2rem;
+}
+.servIcon:hover .ico-circle{
+    
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+.ico-circle{
+    transition: all 500ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;  
+}
+.icons{
+    padding-bottom: 1rem;
+}
+.ico-circle1{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    line-height: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0 0 10px #cde1f8;
+   border-radius: 50%;
+}
+.ico-circle:hover{
+    background-color: #0078ff;
+}
+.sectionSERV{
+    width: 100%;
+    background-image: url(../images/counters-bg.jpg);
+    position: relative;
+    padding: 8rem 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.OVER{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+}
+.numb{
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+}
+.numb span{
+font-size: 2rem;
+}
+/*protfolio*/
+
+.protofolio{
+    background-color:#ccc;
+    padding: 5rem 0rem!important;
+}
+.contProtfolio img{
+    width: 100%;
+    transition: 1s;
+}
+.ImageProtfolio{
+    overflow: hidden;
+}
+.contProtfolio:hover img{
+transform: scale(1.3);
+}
+.WorkCont{
+    padding: 2rem 3% 1rem 4%;
+}
+.contProtfolio h2{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+font-size: 1.2rem;
+}
+.contProtfolio span{
+    font-size: 0.8rem;
+    color: #0078ff;
+}
+.contProtfolio p{
+    font-size: 0.8rem;
+}
+.protfolioLink{
+    float: right;
+}
+.wLink{
+    padding: 3rem 1.2rem 0.2em 4%;
+}
+/* slider protfolio */
+.contentOFProtfolio{
+    width: 100%;
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 4.5rem 0;
+}
+.overlayPROTFOLIO{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+}
+.overlayImage img{
+   border-radius: 50%;
+   margin-bottom: 0.7rem;
+}
+.overlayImage {
+    line-height: 3rem;
+    color: white !important;
+    margin: 1rem;
+    
+}
+.overlayImage h4{
+    font-size: 1.5rem !important;
+}
+.SliderBUTTON{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important ;
+    background-color: white !important;
+    
+      
+}
+/* Blog */
+.galary{
+    padding: 5rem 0REM !important;
+}
+.BlogContent img{
+    width: 100%;
+}
+.BlogContent a{
+    text-decoration: none;
+    color:#1e1e1e;
+    font-size: 1.6rem;
+    transition: all 0.5s;
+}
+.BlogContent a:hover{
+    color: #0078ff;
+}
+.contentcard{
+    position: relative;
+   
+}
+.cardBooton{
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    right: 15px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.category {
+    color: #fff;
+    padding: 0 15px 5px;
+    background-color: #0078ff;
+    border-radius: 4px;
+    overflow:hidden;
+}
+.BlogFooter img{
+    width: 25%;
+    border-radius:50% ;
+    padding:  0 0.3rem;
+}
+.BlogFooter{
+    padding:0.5rem 0rem;
+    background-color: rgb(231, 225, 225);
+}
+.BlogFooter a{
+    text-decoration: none;
+    color:#1e1e1e;
+}
+/* CONTACT */
+.contactBTN{
+    padding: 10px 24px;
+    border-radius: 5rem solid  ;
+    border: 0;
+    background-color: #0078ff !important ;
+    color: white;
+    line-height: inherit;
+    transition: all 500ms;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.contactBTN:hover{
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+.BOTTONCONT{
+    text-align: center;
+}
+.contentOFProtfolio{
+    padding:6rem 0 3rem 0 !important ;
+}
+.regest{
+    padding: 10px 15px;
+    transition: all 3s;
+}
+.regest:hover{
+   
+    border-color: #0078ff !important;
+    box-shadow: 0 0 0 5px #cde1f8;
+}
+.socialMedia a{
+    text-decoration: none;
+    color: black;
+}
+.socialMedia i{
+    border-radius: 50% solid !
+}
+.socialMedia .ico-circle{
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 1.6;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #0078ff;
+    transition: all 500ms ease;
+}
+.socialMedia{
+    margin-bottom: 3rem;
+    margin-top: 0.5rem !important;
+}
+/* .contactBox{
+    /* margin-top: 0.5rem !important; */
+ */
+.inform p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #4e4e4e;
+}
+/* footer */
+.footer{
+   padding: 25px 0;
+    background: #0062d3
+}
+.pargraf p{
+    margin-bottom: 0.3rem !important;
+    color: white;
+}
+.End p{
+    color: white;
+    margin-bottom: 0 !important;
+}
+.slider-content{
+    width: 100%;
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 6rem 0;
+}
+.overlay-slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+}
+.slider-text img {
+    width: 20% !important;
+   border-radius: 50%;
+   margin-bottom: 0.7rem;
+}
+.slider-text
+{
+    line-height: 3rem;
+    color: white !important;
+    margin: 1rem;
+    font-size: 1.5rem !important;
+}
+.slider-btn{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
